@@ -1,5 +1,54 @@
 {
   "dependencies": {
+    "com.5unad0ke1.grainium": {
+      "version": "https://github.com/5unad0ke1/Grainium.git?path=/Grainium/Assets/Grainium#develop",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "dbe47401db38b6588f51eed8f3b3b8c5fc237e0a"
+    },
+    "com.annulusgames.lit-motion": {
+      "version": "https://github.com/annulusgames/LitMotion.git?path=src/LitMotion/Assets/LitMotion",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.burst": "1.6.0",
+        "com.unity.collections": "1.5.1",
+        "com.unity.mathematics": "1.0.1"
+      },
+      "hash": "6cae9f18a49de0259904268ca76cf12cb89d1fc5"
+    },
+    "com.cysharp.unitask": {
+      "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "a9e27c03d411d2fca01cc7410c24c97cd77cb539"
+    },
+    "com.github-glitchenzo.nugetforunity": {
+      "version": "https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "c2af83c9d4f8cdaada9d4a0e94de2f195d8e1d01"
+    },
+    "com.ruccho.bitonicpixelsorter": {
+      "version": "https://github.com/ruccho/BitonicPixelSorter.git?path=/Packages/com.ruccho.bitonicpixelsorter#release",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "922f50ed0aabceda9f3f8a8ebcfbb960d1a5117a"
+    },
+    "com.ruccho.bitonicpixelsorter.urp": {
+      "version": "https://github.com/ruccho/BitonicPixelSorter.git?path=/Packages/com.ruccho.bitonicpixelsorter.urp#release",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.ruccho.bitonicpixelsorter": "1.0.0",
+        "com.unity.render-pipelines.universal": "12.1.6"
+      },
+      "hash": "922f50ed0aabceda9f3f8a8ebcfbb960d1a5117a"
+    },
     "com.unity.2d.animation": {
       "version": "13.0.4",
       "depth": 0,
@@ -101,7 +150,7 @@
     },
     "com.unity.burst": {
       "version": "1.8.28",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.mathematics": "1.2.1",
@@ -282,6 +331,12 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "nuget-packages": {
+      "version": "file:nuget-packages",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
