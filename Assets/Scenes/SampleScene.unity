@@ -490,6 +490,15 @@ GameObject:
   - component: {fileID: 977289646}
   - component: {fileID: 977289645}
   - component: {fileID: 977289649}
+  - component: {fileID: 977289658}
+  - component: {fileID: 977289657}
+  - component: {fileID: 977289651}
+  - component: {fileID: 977289656}
+  - component: {fileID: 977289655}
+  - component: {fileID: 977289653}
+  - component: {fileID: 977289652}
+  - component: {fileID: 977289650}
+  - component: {fileID: 977289659}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -510,7 +519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 16.024384, y: 116.23448}
+  scrollPos: {x: 21.024384, y: -29.765518}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 403
@@ -521,8 +530,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 977289651}
+  selectedCommands:
+  - {fileID: 977289659}
   variables: []
   description: 
   stepPause: 0
@@ -548,8 +559,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 74.3956
-    y: 105.670296
+    x: 67.3956
+    y: 144.67029
     width: 110.19
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -632,8 +643,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Fungus::Fungus.Block
   nodeRect:
     serializedVersion: 2
-    x: 66.59562
-    y: 234.26552
+    x: 70.59562
+    y: 229.26552
     width: 115.76
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -651,6 +662,7 @@ MonoBehaviour:
   - {fileID: 977289646}
   - {fileID: 977289645}
   - {fileID: 977289649}
+  - {fileID: 977289657}
   suppressAllAutoSelections: 0
 --- !u!114 &977289642
 MonoBehaviour:
@@ -850,6 +862,241 @@ MonoBehaviour:
   itemId: 12
   indentLevel: 0
   storyText: "\u3053\u306E\u6182\u9B31\u3092\u6255\u3063\u3066\u304F\u308C\u308B\u3088\u3046\u306A\u3002"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &977289650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977289634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.Say
+  itemId: 21
+  indentLevel: 0
+  storyText: "\u8857\u706F\u304C\u5F7C\u5973\u306B\u4E0D\u6C17\u5473\u3055\u3092\u611F\u3058\u3055\u305B\u308B\u3002\u300C\u4ECA\u65E5\u306F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\u300D"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &977289651
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977289634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.Block
+  nodeRect:
+    serializedVersion: 2
+    x: 94.20062
+    y: 394.2655
+    width: 74.01
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 15
+  blockName: "\u4E0B\u6821"
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 977289655}
+  - {fileID: 977289653}
+  - {fileID: 977289659}
+  - {fileID: 977289652}
+  - {fileID: 977289650}
+  suppressAllAutoSelections: 0
+--- !u!114 &977289652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977289634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.Say
+  itemId: 20
+  indentLevel: 0
+  storyText: "\u91D1\u9AEA\u306E\u5973\u3060\u3063\u305F\u3002\n\u6FC1\u308A\u5207\u3063\u305F\u6CE5\u306E\u3088\u3046\u306A\u9ED2\u304F\u67D3\u307E\u3063\u305F\u77B3\u304C\u3001\u9759\u304B\u306B\u3053\u3061\u3089\u3092\u898B\u3064\u3081\u3066\u3044\u308B\u3002"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &977289653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977289634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.Say
+  itemId: 19
+  indentLevel: 0
+  storyText: "\u305D\u3053\u306F\u8857\u306B\u96A0\u308C\u305F\u9759\u304B\u306A\u516C\u5712\u3002\n\u5C11\u3057\u306E\u9593\u30EA\u30E9\u30C3\u30AF\u30B9\u3059\u308B\u306E\u3082\u60AA\u304F\u306A\u3044\u3060\u308D\u3046\u3002"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &977289655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977289634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.Say
+  itemId: 17
+  indentLevel: 0
+  storyText: "\u4E0B\u6821\u306E\u30C1\u30E3\u30A4\u30E0\u304C\u6821\u5185\u306B\u97FF\u304F\u3002\u4E0B\u6821\u306E\u6642\u9593\u3060\u3002\n\u4ECA\u65E5\u306F\u6700\u8FD1\u898B\u3064\u3051\u305F\u30B9\u30DD\u30C3\u30C8\u3067\u4F11\u61A9\u3059\u308B\u3053\u3068\u306B\u3057\u3088\u3046\u3002"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &977289656
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977289634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.Call
+  itemId: 16
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 977289651}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &977289657
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977289634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.Call
+  itemId: 14
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 977289658}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &977289658
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977289634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.Block
+  nodeRect:
+    serializedVersion: 2
+    x: 75.97562
+    y: 306.7655
+    width: 110.009995
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 13
+  blockName: "\u63A2\u7D22\uFF08\u4EEE\uFF09"
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 977289656}
+  suppressAllAutoSelections: 0
+--- !u!114 &977289659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977289634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.Say
+  itemId: 22
+  indentLevel: 0
+  storyText: "1\u6642\u9593\u307B\u3069\u3059\u308B\u3068\u76EE\u306E\u524D\u304B\u3089\u5973\u6027\u304C\u6B69\u3044\u3066\u304F\u308B\u3002\n\u300C\u3084\u3042\u5C11\u5E74\u3002\u300D"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
