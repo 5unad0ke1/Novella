@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Fungus::Fungus.FungusState
-  selectedFlowchart: {fileID: 957826338}
+  selectedFlowchart: {fileID: 977289635}
 --- !u!4 &150245851
 Transform:
   m_ObjectHideFlags: 1
@@ -2425,7 +2425,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &957826335
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2446,7 +2446,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &957826336
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2539,12 +2539,6 @@ GameObject:
   - component: {fileID: 977289642}
   - component: {fileID: 977289658}
   - component: {fileID: 977289651}
-  - component: {fileID: 977289655}
-  - component: {fileID: 977289653}
-  - component: {fileID: 977289652}
-  - component: {fileID: 977289650}
-  - component: {fileID: 977289659}
-  - component: {fileID: 977289661}
   - component: {fileID: 977289665}
   - component: {fileID: 977289664}
   - component: {fileID: 977289667}
@@ -2578,6 +2572,7 @@ GameObject:
   - component: {fileID: 977289712}
   - component: {fileID: 977289704}
   - component: {fileID: 977289714}
+  - component: {fileID: 977289715}
   m_Layer: 0
   m_Name: "Flowchart_\u4EEE"
   m_TagString: Untagged
@@ -2611,7 +2606,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 977289651}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 977289715}
   variables: []
   description: 
   stepPause: 0
@@ -2686,33 +2682,6 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
---- !u!114 &977289650
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977289634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Fungus::Fungus.Say
-  itemId: 21
-  indentLevel: 0
-  storyText: "\u300C\u4ECA\u65E5\u306F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\uFF3F\u300D"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &977289651
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2738,94 +2707,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 977289655}
-  - {fileID: 977289653}
-  - {fileID: 977289659}
-  - {fileID: 977289661}
-  - {fileID: 977289652}
-  - {fileID: 977289650}
+  - {fileID: 977289715}
   suppressAllAutoSelections: 0
---- !u!114 &977289652
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977289634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Fungus::Fungus.Say
-  itemId: 20
-  indentLevel: 0
-  storyText: "\u91D1\u9AEA\u306E\u5973\u3060\u3063\u305F\u3002\n\u6FC1\u308A\u5207\u3063\u305F\u6CE5\u306E\u3088\u3046\u306A\u9ED2\u304F\u67D3\u307E\u3063\u305F\u77B3\u304C\u3001\u9759\u304B\u306B\u3053\u3061\u3089\u3092\u898B\u3064\u3081\u3066\u3044\u308B\u3002\n\u8857\u706F\u304C\u5F7C\u5973\u306B\u4E0D\u6C17\u5473\u3055\u3092\u611F\u3058\u3055\u305B\u308B\u3002"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &977289653
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977289634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Fungus::Fungus.Say
-  itemId: 19
-  indentLevel: 0
-  storyText: "\u305D\u3053\u306F\u8857\u306B\u96A0\u308C\u305F\u9759\u304B\u306A\u516C\u5712\u3002\n\u5C11\u3057\u306E\u9593\u30EA\u30E9\u30C3\u30AF\u30B9\u3059\u308B\u306E\u3082\u60AA\u304F\u306A\u3044\u3060\u308D\u3046\u3002"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &977289655
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977289634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Fungus::Fungus.Say
-  itemId: 17
-  indentLevel: 0
-  storyText: "\u4E0B\u6821\u306E\u30C1\u30E3\u30A4\u30E0\u304C\u6821\u5185\u306B\u97FF\u304F\u3002\u4E0B\u6821\u306E\u6642\u9593\u3060\u3002\n\u4ECA\u65E5\u306F\u6700\u8FD1\u898B\u3064\u3051\u305F\u30B9\u30DD\u30C3\u30C8\u3067\u4F11\u61A9\u3059\u308B\u3053\u3068\u306B\u3057\u3088\u3046\u3002"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &977289658
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2855,60 +2738,6 @@ MonoBehaviour:
   - {fileID: 977289666}
   - {fileID: 977289676}
   suppressAllAutoSelections: 0
---- !u!114 &977289659
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977289634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Fungus::Fungus.Say
-  itemId: 22
-  indentLevel: 0
-  storyText: "1\u6642\u9593\u307B\u3069\u3059\u308B\u3068\u76EE\u306E\u524D\u304B\u3089\u5973\u6027\u304C\u6B69\u3044\u3066\u304F\u308B\u3002"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &977289661
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977289634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Fungus::Fungus.Say
-  itemId: 23
-  indentLevel: 0
-  storyText: "\u300C\u3084\u3042\u5C11\u5E74\u3002\u300D"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &977289664
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3756,6 +3585,27 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &977289715
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977289634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.Call
+  itemId: 77
+  indentLevel: 0
+  targetFlowchart: {fileID: 1721706153}
+  targetBlock: {fileID: 1721706152}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!1 &994503492
 GameObject:
   m_ObjectHideFlags: 0
@@ -4068,7 +3918,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 70
-    width: 120
+    width: 110.19
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4989,6 +4839,7 @@ GameObject:
   - component: {fileID: 1721706147}
   - component: {fileID: 1721706146}
   - component: {fileID: 1721706145}
+  - component: {fileID: 1721706154}
   m_Layer: 0
   m_Name: "Flowchart_\u5973\u6027"
   m_TagString: Untagged
@@ -5013,7 +4864,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1721706145
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5040,7 +4891,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1721706146
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5067,7 +4918,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1721706147
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5094,7 +4945,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1721706148
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5121,7 +4972,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1721706149
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5148,7 +4999,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1721706150
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5175,7 +5026,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1721706151
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5187,14 +5038,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Fungus::Fungus.Block
   nodeRect:
     serializedVersion: 2
-    x: 454.495
-    y: 324
-    width: 139.72
+    x: 458.495
+    y: 325
+    width: 98.009995
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 15
-  blockName: "\u63A2\u7D22\u7D42\u4E86 (Copy)"
+  blockName: "\u63A2\u7D22\u7D42\u4E86"
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -5229,7 +5080,8 @@ MonoBehaviour:
   blockName: Start
   description: 
   eventHandler: {fileID: 0}
-  commandList: []
+  commandList:
+  - {fileID: 1721706154}
   suppressAllAutoSelections: 0
 --- !u!114 &1721706153
 MonoBehaviour:
@@ -5255,8 +5107,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1721706152}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 
@@ -5269,6 +5120,27 @@ MonoBehaviour:
   hideCommands: []
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
+--- !u!114 &1721706154
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721706143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.Call
+  itemId: 16
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 1721706151}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!1 &1798722477
 GameObject:
   m_ObjectHideFlags: 0
@@ -5292,7 +5164,6 @@ GameObject:
   - component: {fileID: 1798722483}
   - component: {fileID: 1798722482}
   - component: {fileID: 1798722481}
-  - component: {fileID: 1798722480}
   - component: {fileID: 1798722479}
   m_Layer: 0
   m_Name: "Flowchart_\u6700\u521D\u306E\u30CA\u30EC\u30FC\u30B7\u30E7\u30F3"
@@ -5337,21 +5208,6 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
---- !u!114 &1798722480
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1798722477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Fungus::Fungus.GameStarted
-  parentBlock: {fileID: 1798722481}
-  suppressBlockAutoSelect: 0
-  waitForFrames: 1
 --- !u!114 &1798722481
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5366,8 +5222,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Fungus::Fungus.Block
   nodeRect:
     serializedVersion: 2
-    x: 205
-    y: 105
+    x: 267
+    y: 119
     width: 78.03
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5375,7 +5231,7 @@ MonoBehaviour:
   itemId: 12
   blockName: Start
   description: 
-  eventHandler: {fileID: 1798722480}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1798722479}
   suppressAllAutoSelections: 0
